@@ -145,7 +145,7 @@ public class MainFoodCart {
         sc.close();
 
         System.out.println("how many times user choosed burger : " + BurgerCart.burgerCount);
-        System.out.println("how many times user choosed burger : " + PizzaCart.pizzaCount);
-        System.out.println("how many times user choosed burger : " + ColdDrinksCart.drinksCount);
+        System.out.println("how many times user choosed pizza : " + PizzaCart.pizzaCount);
+        System.out.println("how many times user choosed drinks : " + ColdDrinksCart.drinksCount);
     }
 }
