@@ -1,12 +1,12 @@
 public class PizzaCart extends FoodItem {
-    public String pizzaType;
+    // public String name;
     public String size;
     public static int pizzaCount;
     
     // Default constructor
     public PizzaCart() {
         super(); // This calls the FoodItem parent constructor!
-        this.pizzaType = "";
+        // this.name = "";
     }
 
     {
@@ -14,69 +14,68 @@ public class PizzaCart extends FoodItem {
     }
     
     // Parameterized constructor
-    public PizzaCart(String name, double price, int quantity, String pizzaType) {
+    public PizzaCart(String name, double price, int quantity) {
         super(name, price, quantity);
-        this.pizzaType = pizzaType;
+        // this.name = name;
     }
 
     public void choosePizza(int n) {
         switch (n) {
             case 1:
-                this.pizzaType = "Onion pizza";
+                this.name = "Onion pizza";
                 this.price = 80.0;  // Modifying the price inherited from FoodItem
-                System.out.println(pizzaType + " (80.0) Added To cart");                
+                System.out.println(name + " (80.0) Added To cart");                
                 break;
             case 2:
-                this.pizzaType = "Tomato Pizza";
+                this.name = "Tomato Pizza";
                 this.price = 70.0;  
-                System.out.println(pizzaType  + " (70.0) Added To cart");
+                System.out.println(name  + " (70.0) Added To cart");
                 break;
             case 3:
-                this.pizzaType = "Indi Tandoori pizza";
+                this.name = "Indi Tandoori pizza";
                 this.price = 250.0;  
-                System.out.println(pizzaType + " (250.0) Added To cart");
+                System.out.println(name + " (250.0) Added To cart");
                 break;
             case 4:
-                this.pizzaType = "Farm House Pizza";
+                this.name = "Farm House Pizza";
                 this.price = 350.0;  
-                System.out.println(pizzaType + " (350.0) Added To cart");
+                System.out.println(name + " (350.0) Added To cart");
                 break;
             default:
                 System.out.println("Invalid Choice. Choose a number between 1 and 4.");
                 break;
         }
     }
-    
     // Getters and Setters
-    public String getPizzaType() {
-        return pizzaType;
+    public String getname() {
+        return name;
     }
     
-    public void setPizzaType(String pizzaType) {
-        this.pizzaType = pizzaType;
+    public void setname(String name) {
+        this.name = name;
     }
 
     public void chooseSize(int n){
         switch (n) {
             case 1:
                 this.size = "Regular";
-                System.out.println("You have Choosen a " + this.size + " " + this.pizzaType);   
+                System.out.println("You have Choosen a " + this.size + " " + this.name);   
                 break;
 
             case 2:
                 this.size = "Medium";
                 this.price = this.price + 30;
-                System.out.println("You have Choosen a " + this.size + " " + this.pizzaType);
+                System.out.println("You have Choosen a " + this.size + " " + this.name);
                 break;
 
                 case 3:
                 this.size = "Large";
                 this.price = this.price + 60;
-                System.out.println("You have Choosen a " + this.size + " " + this.pizzaType);    
+                System.out.println("You have Choosen a " + this.size + " " + this.name);    
                 break;
         
             default:
-                System.out.println("Your Coldrink is Small " + this.pizzaType );
+                System.out.println("Your Coldrink is Small " + this.name );
                 break;
         }
     }

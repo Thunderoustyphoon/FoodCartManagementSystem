@@ -53,7 +53,7 @@ public class MainFoodCart {
                     // Order summary
                     
                     System.out.println("\n--- Order Summary ---");
-                    System.out.println("Burger: " + burger.getBurgerType());
+                    System.out.println("Burger: " + burger.getname());
                     System.out.println("Total for this item: " + burger.getTotalPrice());
                     
                     // Add this item's price to our final bill
@@ -91,7 +91,7 @@ public class MainFoodCart {
                     }
                     
                     System.out.println("\n--- Order Summary ---");
-                    System.out.println("Drink: " + drink.getColdDrinkType());
+                    System.out.println("Drink: " + drink.getname());
                     System.out.println("Total for this item: " + drink.getTotalPrice());
                     
                     grandTotal = grandTotal + drink.getTotalPrice();
@@ -123,7 +123,7 @@ public class MainFoodCart {
                     
                     
                     System.out.println("\n--- Order Summary ---");
-                    System.out.println("Pizza: " + pizza.getPizzaType());
+                    System.out.println("Pizza: " + pizza.getname());
                     System.out.println("Total for this item: " + pizza.getTotalPrice());
                     
                     grandTotal = grandTotal + pizza.getTotalPrice();
