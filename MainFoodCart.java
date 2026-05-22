@@ -7,7 +7,6 @@ public class MainFoodCart {
         
         boolean continueOrdering = true;
         double grandTotal = 0.0; // This will hold our final bill
-        int burgerCount = 0 , pizzaCount = 0 , drinkCount = 0;
         
         while(continueOrdering == true) {
             System.out.println("\n--- Choose Food Type ---");
@@ -59,7 +58,7 @@ public class MainFoodCart {
                     
                     // Add this item's price to our final bill
                     grandTotal = grandTotal + burger.getTotalPrice();
-                    burgerCount+=1;
+                    
                     break;
                     
                 case 2:
@@ -96,7 +95,7 @@ public class MainFoodCart {
                     System.out.println("Total for this item: " + drink.getTotalPrice());
                     
                     grandTotal = grandTotal + drink.getTotalPrice();
-                    drinkCount+=1;
+                    
                     break;
                     
                 case 3:
@@ -128,7 +127,7 @@ public class MainFoodCart {
                     System.out.println("Total for this item: " + pizza.getTotalPrice());
                     
                     grandTotal = grandTotal + pizza.getTotalPrice();
-                    pizzaCount+=1;
+                    
                     break;
                     
                 case 4:
@@ -136,9 +135,7 @@ public class MainFoodCart {
                     System.out.println("\n=== Thank You for Using Food Cart System ===");
                     System.out.println("Your Grand Total to pay is: " + grandTotal + " Rupees");
 
-                    System.out.println("Choosen Burger how many times" + " " + burgerCount);
-                    System.out.println("Choosen Drink how many times" + " " + drinkCount);
-                    System.out.println("Choosen pizza how many times" + " " + pizzaCount);
+                    
                     break;
                     
                 default:
@@ -146,5 +143,9 @@ public class MainFoodCart {
             }
         }
         sc.close();
+
+        System.out.println("how many times user choosed burger : " + BurgerCart.burgerCount);
+        System.out.println("how many times user choosed burger : " + PizzaCart.pizzaCount);
+        System.out.println("how many times user choosed burger : " + ColdDrinksCart.drinksCount);
     }
 }

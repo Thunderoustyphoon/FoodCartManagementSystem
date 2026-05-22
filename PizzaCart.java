@@ -1,11 +1,16 @@
 public class PizzaCart extends FoodItem {
     public String pizzaType;
     public String size;
+    public static int pizzaCount;
     
     // Default constructor
     public PizzaCart() {
         super(); // This calls the FoodItem parent constructor!
         this.pizzaType = "";
+    }
+
+    {
+        pizzaCount+=1;
     }
     
     // Parameterized constructor

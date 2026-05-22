@@ -1,11 +1,16 @@
 public class BurgerCart extends FoodItem {
     public boolean isCheeseAdded;
     public String burgerType;
+    public static int burgerCount;
 
     public BurgerCart() {
         super(); // Calls the FoodItem parent constructor
         this.isCheeseAdded = false;
         this.burgerType = "";
+    }
+
+    {
+        burgerCount+=1;
     }
     
     public BurgerCart(String name, double price, int quantity, String burgerType) {

@@ -2,12 +2,17 @@ public class ColdDrinksCart extends FoodItem {
     public boolean icedOrNot;
     public String coldDrinkType;
     public String size;
-    
+    public static int drinksCount;
+
     public ColdDrinksCart() {
         super(); // Calls the FoodItem parent constructor
         this.icedOrNot = false;
         this.coldDrinkType = "";
         this.size = "Small";
+    }
+
+    {
+        drinksCount+=1;
     }
     
     public ColdDrinksCart(String name, double price, int quantity, String coldDrinkType) {
